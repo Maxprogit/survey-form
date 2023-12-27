@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">welcome to my survey form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form" method="post" action="">
+        <fieldset>
+            <label id="name-label" for="name">Name<input class="name" id="name" type="text" name="name" placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Email<input class="email" id="email" type="email" name="email" placeholder="Enter you Email" required></label>
+            <label id="number-label" for="number">Number<input class="number" id="number" type="number" name="number" min="18" max="99" placeholder="number" required /></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Which option describe best your habilities
+                <select name="dropdown" id="dropdown">
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                    <option value="4">four</option>
+                    <option value="5">five</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend my survey-form
+                <label for="first-option"><input class="first-second" id="first-option" name="first-second" type="radio" value="first-option" checked>first-option</label>
+                <label for="second-option"><input class="first-second" id="second-option" name="first-second" type="radio" value="second-option">second-option</label>
+            </legend>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> Would you recommend my survey-form
+                <select name="dropdown" id="dropdown">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend> Would you recommend my survey-form
+                <label for="check-one"><input class="checks" id="check-one" type="checkbox" value="check-one"/>a</label>
+                <label for="check-two"><input class="checks" id="check-two" type="checkbox" value="check-two"/>b</label>
+                <label for="check-three"><input class="checks" id="check-three" type="checkbox" value="check-three"/>c</label>
+                <label for="check-four"><input class="checks" id="check-four" type="checkbox" value="check-four"/>d</label>
+            </legend>
+        </fieldset>
+        <fieldset>
+            <label for="textarea">Anny comments or suggestions?<textarea name="textarea" id="textarea" cols="5" rows="6" placeholder="Enter your comment here..."></textarea></label>
+            <input id="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
